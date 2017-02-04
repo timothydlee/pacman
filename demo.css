@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  border: red solid 2px;
+  height: 150%;
+  background-color: black;
+}
+
+#pacman-top {
+  height:45px;
+  width:90px;
+  border-radius: 90px 90px 0 0;
+  background: yellow;
+  position: absolute;
+  left: -10%;
+  top: 100px;
+  animation: mouthTop 10s infinite;
+}
+
+#pacman-bottom {
+  height:45px;
+  width:90px;
+  border-radius: 0 0 90px 90px;
+  background: yellow;
+  position: absolute;
+  left: -10%;
+  top: 145px;
+  animation: mouthBottom 10s infinite;
+}
+
+.food {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 145px;
+}
+
+.f1 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 145px;
+  left: 20%;
+  animation: eaten 10s infinite;
+}
+
+.f2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 145px;
+  left: 60%;
+  animation: eaten 10s infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes mouthBottom {
+  10% {
+    transform: rotate(25deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(25deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(25deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(25deg);
+    left: 110%;
+  }
+}
+
+@keyframes mouthTop {
+  10% {
+    transform: rotate(-25deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-25deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(-25deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+    left: 110%;
+  }
+}
+
+@keyframes eaten {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
