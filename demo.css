@@ -46,7 +46,7 @@ html, body {
   background: white;
   position: absolute;
   top: 145px;
-  left: 20%;
+  left: 18%;
   animation: eaten 10s infinite;
 }
 
